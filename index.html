@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Meller &amp; Floyd | Landlord &amp; Real Estate Attorneys — Santa Monica</title>
+<meta name="description" content="Meller &amp; Floyd is a Santa Monica law firm representing landlords and property owners in eviction (unlawful detainer), rent control, and real estate matters. Over 90 years of combined experience.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#1c2a3a;
+    --navy-2:#26384c;
+    --gold:#b08d49;
+    --gold-soft:#c9a866;
+    --cream:#f6f3ec;
+    --paper:#ffffff;
+    --ink:#2a2f36;
+    --muted:#5d6670;
+    --line:#e3ddd0;
+    --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+    --sans:'Source Sans 3',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;color:var(--navy);line-height:1.15}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .gold{color:var(--gold)}
+  .eyebrow{font-family:var(--sans);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:16px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .brand{font-family:var(--serif);font-size:26px;font-weight:700;color:var(--navy);letter-spacing:.01em}
+  .brand span{color:var(--gold)}
+  .brand small{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:2px}
+  nav ul{display:flex;gap:30px;list-style:none;align-items:center}
+  nav a{font-size:14.5px;font-weight:500;color:var(--navy-2);transition:color .2s}
+  nav a:hover{color:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:#fff;font-weight:600;font-size:14.5px;padding:12px 24px;border-radius:2px;transition:background .2s,transform .15s}
+  .btn:hover{background:#9a7a3c;transform:translateY(-1px)}
+  .btn-ghost{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+  .btn-ghost:hover{background:var(--gold);color:#fff}
+
+  /* Hero */
+  .hero{position:relative;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 100%);color:#eef1f4;overflow:hidden}
+  .hero::after{content:"";position:absolute;inset:0;background:
+    radial-gradient(circle at 80% 20%,rgba(176,141,73,.18),transparent 45%),
+    repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 60px);pointer-events:none}
+  .hero .wrap{position:relative;z-index:2;padding:96px 28px 104px}
+  .hero h1{color:#fff;font-size:clamp(40px,6vw,68px);max-width:14ch;font-weight:700}
+  .hero p.lead{font-size:20px;color:#c8d0d9;max-width:60ch;margin:26px 0 36px;line-height:1.6}
+  .hero .cta{display:flex;gap:16px;flex-wrap:wrap}
+  .stats{display:flex;gap:48px;margin-top:64px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.14);padding-top:36px}
+  .stat .n{font-family:var(--serif);font-size:42px;color:var(--gold-soft);font-weight:700;line-height:1}
+  .stat .l{font-size:13.5px;color:#aab4be;letter-spacing:.04em;margin-top:8px}
+
+  /* Section base */
+  section{padding:88px 0}
+  .center{text-align:center}
+  .center .eyebrow{margin-left:auto;margin-right:auto}
+  h2.title{font-size:clamp(30px,4vw,44px);margin-bottom:18px}
+  .sub{color:var(--muted);font-size:18px;max-width:62ch}
+  .center .sub{margin:0 auto}
+
+  /* Practice areas */
+  .practice{background:var(--cream)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:52px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:4px;padding:34px 30px;transition:transform .2s,box-shadow .2s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(28,42,58,.45)}
+  .card .ic{width:46px;height:46px;color:var(--gold);margin-bottom:18px}
+  .card h3{font-size:24px;margin-bottom:10px}
+  .card p{font-size:15.5px;color:var(--muted);line-height:1.6}
+
+  /* About / why */
+  .about .cols{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+  .about p{color:var(--muted);margin-bottom:18px}
+  .checks{list-style:none;margin-top:14px}
+  .checks li{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px;font-size:16px;color:var(--ink)}
+  .checks svg{flex:0 0 auto;width:22px;height:22px;color:var(--gold);margin-top:2px}
+  .panel{background:var(--navy);color:#dfe5ea;border-radius:6px;padding:44px 40px;position:relative}
+  .panel h3{color:#fff;font-size:27px;margin-bottom:8px}
+  .panel .quote{font-family:var(--serif);font-size:21px;line-height:1.5;color:#eef1f4;font-style:italic}
+  .panel .src{margin-top:18px;font-size:13.5px;letter-spacing:.04em;color:var(--gold-soft)}
+
+  /* Attorneys */
+  .attorneys{background:var(--cream)}
+  .team{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:52px}
+  .person{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+  .person .top{display:flex;gap:22px;padding:30px 30px 22px;align-items:center}
+  .avatar{flex:0 0 auto;width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--navy-2));color:var(--gold-soft);font-family:var(--serif);font-size:30px;font-weight:700;display:flex;align-items:center;justify-content:center;letter-spacing:.02em}
+  .person h3{font-size:25px;margin-bottom:2px}
+  .person .role{font-size:13.5px;color:var(--gold);letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+  .person .body{padding:0 30px 30px;color:var(--muted);font-size:15.5px}
+  .person .body ul{list-style:none;margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+  .person .body li{font-size:14px;color:var(--ink);padding:4px 0;display:flex;justify-content:space-between;gap:12px}
+  .person .body li span{color:var(--muted)}
+
+  /* Contact */
+  .contact .cols{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .info-row{display:flex;gap:16px;align-items:flex-start;margin-bottom:26px}
+  .info-row svg{width:26px;height:26px;color:var(--gold);flex:0 0 auto;margin-top:3px}
+  .info-row .k{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:3px}
+  .info-row .v{font-size:18px;color:var(--navy);font-weight:500}
+  form label{display:block;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 7px}
+  form input,form textarea{width:100%;padding:13px 15px;border:1px solid var(--line);border-radius:3px;font-family:var(--sans);font-size:16px;color:var(--ink);background:#fdfcfa;margin-bottom:20px}
+  form input:focus,form textarea:focus{outline:none;border-color:var(--gold)}
+  .formcard{background:var(--cream);border:1px solid var(--line);border-radius:6px;padding:36px}
+
+  .note{background:#fff7e6;border-left:3px solid var(--gold);padding:10px 16px;font-size:13px;color:#7a5e22;margin-top:14px;border-radius:2px}
+  .disc{background:var(--cream);border-top:1px solid var(--line)}
+  .disc .wrap{padding:24px 28px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.6}
+
+  /* Footer */
+  footer{background:var(--navy);color:#aab4be;padding:54px 0 30px}
+  .fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(255,255,255,.12)}
+  footer .brand{color:#fff}
+  footer h4{color:#fff;font-family:var(--sans);font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:16px}
+  footer ul{list-style:none}
+  footer li{margin-bottom:10px;font-size:14.5px}
+  footer a:hover{color:var(--gold-soft)}
+  .fbot{padding-top:24px;font-size:12.5px;color:#7c8893;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+  @media(max-width:860px){
+    nav ul{display:none}
+    .grid{grid-template-columns:1fr}
+    .about .cols,.team,.contact .cols{grid-template-columns:1fr;gap:36px}
+    .stats{gap:32px}
+    section{padding:64px 0}
+    .hero .wrap{padding:72px 28px}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <div class="brand">Meller &amp; <span>Floyd</span>
+      <small>Attorneys at Law &middot; Santa Monica</small>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#practice">Practice Areas</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#attorneys">Attorneys</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn">Free Case Review</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <p class="eyebrow" style="margin-top:0">Representing California Landlords &amp; Property Owners</p>
+    <h1>Protecting Your Property. Recovering Your Possession.</h1>
+    <p class="lead">For over four decades, Meller &amp; Floyd has guided Santa Monica and Los Angeles property owners through eviction, rent-control compliance, and real estate disputes — with the experience to win and the diligence to collect.</p>
+    <div class="cta">
+      <a href="#contact" class="btn">Request a Consultation</a>
+      <a href="tel:+13108290945" class="btn btn-ghost">Call (310) 829-0945</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">40+</div><div class="l">Years Serving Landlords</div></div>
+      <div class="stat"><div class="n">90+</div><div class="l">Combined Years of Practice</div></div>
+      <div class="stat"><div class="n">Landlord</div><div class="l">Side Only — No Conflicts</div></div>
+      <div class="stat"><div class="n">Santa&nbsp;Monica</div><div class="l">Local Rent-Control Expertise</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE AREAS ============ -->
+<section id="practice" class="practice">
+  <div class="wrap center">
+    <p class="eyebrow">What We Do</p>
+    <h2 class="title">Focused Representation for Property Owners</h2>
+    <p class="sub">We represent landlords — and only landlords — so our entire practice is built around protecting your investment and your rights as an owner.</p>
+  </div>
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        <h3>Evictions &amp; Unlawful Detainer</h3>
+        <p>Full-service handling of the eviction process — from notice to judgment to recovering possession — done correctly the first time to avoid costly delays.</p>
+      </div>
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l8 4v5c0 5-3.4 7.7-8 9-4.6-1.3-8-4-8-9V7l8-4z"/></svg>
+        <h3>Rent Control Compliance</h3>
+        <p>Deep familiarity with Santa Monica and Los Angeles rent-stabilization rules — helping owners stay compliant and act within their legal rights.</p>
+      </div>
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h11l5 5v11H4z"/><path d="M9 9h6M9 13h6M9 17h4"/></svg>
+        <h3>Lease &amp; Notice Drafting</h3>
+        <p>Properly drafted leases, three-day notices, and termination notices that hold up in court and protect you before a dispute ever begins.</p>
+      </div>
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 8l7-5 7 5M5 8v9a7 4 0 0 0 14 0V8"/></svg>
+        <h3>Rent &amp; Debt Recovery</h3>
+        <p>We don't stop at the judgment. We pursue unpaid rent and damages — and have a track record of actually collecting what you are owed.</p>
+      </div>
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h18v13H3zM3 7l9-4 9 4M8 12h8M8 16h5"/></svg>
+        <h3>Real Estate Disputes</h3>
+        <p>Counsel and litigation on property ownership, contracts, title, and related real estate matters affecting your portfolio.</p>
+      </div>
+      <div class="card">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zM12 6v6M9 9h6"/></svg>
+        <h3>Landlord Advisory</h3>
+        <p>Practical, plain-spoken guidance for owners and property managers on day-to-day questions before they escalate into litigation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about">
+  <div class="wrap cols">
+    <div>
+      <p class="eyebrow">Why Owners Choose Us</p>
+      <h2 class="title">Experience That Has Stood the Test of Time</h2>
+      <p>Meller &amp; Floyd has represented Southern California property owners since the 1980s. We know the courts, we know the local rent-control ordinances, and we know what it takes to move a case efficiently from notice to recovery.</p>
+      <p>Because we represent landlords exclusively, our interests are always fully aligned with yours — there are no divided loyalties and no conflicts.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><strong>Landlord-side only.</strong> We never represent tenants — your goals are our only focus.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><strong>We collect, not just win.</strong> A judgment is only worth what you can recover — and recovery is our priority.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><strong>Local rent-control fluency.</strong> Santa Monica and L.A. ordinances are our home turf.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 13l4 4L19 7"/></svg><div><strong>Direct attorney access.</strong> You work with the partners, not a rotating cast.</div></li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h3>In Our Clients' Words</h3>
+      <p class="quote">&ldquo;Mr. Floyd did a superb job expediting the eviction process — even the judge commented on how effective he was. He won the eviction case and collected on it. Thorough and personable.&rdquo;</p>
+      <p class="src">— Verified client review, Avvo</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ATTORNEYS ============ -->
+<section id="attorneys" class="attorneys">
+  <div class="wrap center">
+    <p class="eyebrow">Our Attorneys</p>
+    <h2 class="title">Decades of Combined Experience</h2>
+    <p class="sub">Two seasoned California attorneys with deep roots in real estate and landlord-tenant law.</p>
+  </div>
+  <div class="wrap">
+    <div class="team">
+      <div class="person">
+        <div class="top">
+          <div class="avatar">EM</div>
+          <div>
+            <h3>Eric Meller</h3>
+            <div class="role">Founding Partner</div>
+          </div>
+        </div>
+        <div class="body">
+          Real estate, contracts, and civil practice. Admitted to the California Bar in 1972, with more than five decades of experience advising and litigating on behalf of property owners.
+          <ul>
+            <li>Admitted &middot; California <span>1972</span></li>
+            <li>Undergraduate <span>UCLA</span></li>
+            <li>J.D. <span>Loyola Marymount</span></li>
+            <li>Focus <span>Real Estate &middot; Civil</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="person">
+        <div class="top">
+          <div class="avatar">HF</div>
+          <div>
+            <h3>Harry Floyd, Jr.</h3>
+            <div class="role">Partner</div>
+          </div>
+        </div>
+        <div class="body">
+          Landlord-tenant litigation and real estate. Admitted to the California Bar in 1985, with a 40-year track record of handling evictions and recovering possession for property owners.
+          <ul>
+            <li>Admitted &middot; California <span>1985</span></li>
+            <li>Undergraduate <span>UCLA</span></li>
+            <li>J.D. <span>USC Law</span></li>
+            <li>Focus <span>Landlord-Tenant</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <p class="eyebrow">Get in Touch</p>
+        <h2 class="title">Speak With a Landlord Attorney</h2>
+        <p class="sub" style="margin-bottom:36px">Tell us about your property and your situation. We'll let you know how we can help recover what's yours.</p>
+
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <div><div class="k">Office</div><div class="v">2001 Wilshire Blvd, Suite&nbsp;[___]<br>Santa Monica, CA 90403</div></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5c0 9 6 15 15 15l1-3-4-2-2 2c-2-1-5-4-6-6l2-2-2-4-3 1z"/></svg>
+          <div><div class="k">Phone</div><div class="v"><a href="tel:+13108290945">(310) 829-0945</a></div></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+          <div><div class="k">Email</div><div class="v">[ add firm email ]</div></div>
+        </div>
+        <div class="info-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><div class="k">Hours</div><div class="v">Mon&ndash;Fri, 9:00 AM &ndash; 5:00 PM</div></div>
+        </div>
+        <p class="note">⚠️ Demo note: confirm the suite number (listings show both #200 and #402), add the firm email, and verify office hours before publishing.</p>
+      </div>
+
+      <div class="formcard">
+        <form onsubmit="alert('This is a demo form. In the live site this would email the firm.');return false;">
+          <label for="n">Name</label>
+          <input id="n" type="text" placeholder="Your full name" required>
+          <label for="e">Email</label>
+          <input id="e" type="email" placeholder="you@email.com" required>
+          <label for="p">Phone</label>
+          <input id="p" type="tel" placeholder="(   )   -    ">
+          <label for="m">How can we help?</label>
+          <textarea id="m" rows="4" placeholder="Briefly describe your property and situation"></textarea>
+          <button type="submit" class="btn" style="width:100%;border:none;cursor:pointer;font-family:var(--sans)">Request Consultation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DISCLAIMER ============ -->
+<div class="disc">
+  <div class="wrap">
+    This website is for general information only and does not constitute legal advice. Contacting Meller &amp; Floyd through this site does not create an attorney–client relationship. The firm represents landlords and property owners.
+  </div>
+</div>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="font-family:var(--serif);font-size:24px;font-weight:700">Meller &amp; <span class="gold">Floyd</span></div>
+        <p style="margin-top:14px;font-size:14.5px;max-width:34ch">Attorneys at Law. Representing Southern California landlords and property owners since the 1980s.</p>
+      </div>
+      <div>
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="#practice">Evictions</a></li>
+          <li><a href="#practice">Rent Control</a></li>
+          <li><a href="#practice">Lease Drafting</a></li>
+          <li><a href="#practice">Real Estate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>2001 Wilshire Blvd</li>
+          <li>Santa Monica, CA 90403</li>
+          <li><a href="tel:+13108290945">(310) 829-0945</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot">
+      <div>© 2026 Meller &amp; Floyd. All rights reserved.</div>
+      <div>Santa Monica · Los Angeles County, California</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
